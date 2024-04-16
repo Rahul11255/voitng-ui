@@ -37,7 +37,7 @@ const Dashboard = () => {
 
   const fetchUsers = async () => {
     try {
-      const response = await axios.get("/users");
+      const response = await axios.get("https://voting-app-api-tn00.onrender.com/users");
       const userData = response.data;
       setData({
         totalUser: userData.isLength,
